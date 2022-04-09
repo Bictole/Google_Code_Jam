@@ -1,9 +1,10 @@
 def solve(n, arr):
     res = 0
 
+    arr = sorted(arr)
+
     for i in range(n):
-        mini = min(arr)
-        arr.remove(mini)
+        mini = arr[i]
 
         if mini > res:
             res += 1
